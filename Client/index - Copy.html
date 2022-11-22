@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Motorsports Manager">
+    <title>Motorsoft Manager</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="navbar">
+        <div class="left-icons">
+            <img src="Images/logo.png" alt="motorsoft">
+        </div>
+        <div class="right-icons">
+            <a href="#">
+                <span class="material-icons">notifications</span>
+            </a>
+            <a href="#">
+                <span class="material-icons">dark_mode</span>
+            </a>
+            <a href="#">
+                <span class="material-icons">logout</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="close" id="close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">people</span>
+                    <h3>Driver</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">groups_2</span>
+                    <h3>Car</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">devices</span>
+                    <h3>Sessions</h3>
+                </a>
+                <a href="Policies.html">
+                    <span class="material-icons">assignment</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">apps</span>
+                    <h3>Holder</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">assignment</span>
+                    <h3>holder</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">support_agent</span>
+                    <h3>Support</h3>
+                </a>
+            </div>
+        </aside>
+        <!---------------------end of sidebar----------------------->
+        <div class="main-form">
+            <div class="left-pane">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Date"><strong>Date</strong></label>
+                        </td>
+                        <td>
+                            <input type="date" id="Date" name="Date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Session"><strong>Session type</strong></label>
+                        </td>
+                        <td>
+                            <select id="Session" name="Session">
+                                <option value="test">Test</option>
+                                <option value="prac">Practice</option>
+                                <option value="saab">Qualifying</option>
+                                <option value="fiat">Race</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Driver"><strong>Driver</strong></label>
+                        </td>
+                        <td>
+                            <select id="Driver" name="Driver">
+                                <option value="driver1">Joshua Munro</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Car"><strong>Car</strong></label>
+                        </td>
+                        <td>
+                            <select id="Car" name="Car">
+                                <option value="car1">Vee 1600</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Track"><strong>Track</strong></label>
+                        </td>
+                        <td>
+                            <select id="Track" name="Track">
+                                <option value="track1">Phillip Island</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Weather"><strong>Weather</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="Weather" name="Weather">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Air Temp"><strong>Air Temp</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="Air Temp" name="Air Temp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Track Temp"><strong>Track Temp</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="Track" name="Track">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Laps"><strong>Laps</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="Laps" name="Laps">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Fuel"><strong>Fuel</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="Fuel" name="Fuel">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="centre-pane">
+                <div class="car-img">
+                    <img src="Images/cartopdown.png" alt="CAR">
+                </div>
+                <div class="top-left">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="fl-psi"><strong>PSI</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fl-psi" name="FL-PSI">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fl-temp"><strong>Temp</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fl-temp" name="FL-TEMP">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fl-toe"><strong>Toe</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fl-toe" name="FL-TOE">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fl-camber"><strong>Camber</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fl-camber" name="FL-camber">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="top-right">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="fr-psi"><strong>PSI</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fr-psi" name="fr-PSI">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fr-temp"><strong>Temp</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fr-temp" name="fr-TEMP">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fr-toe"><strong>Toe</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fr-toe" name="Fr-TOE">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fr-camber"><strong>Camber</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fr-camber" name="Fr-camber">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bottom-left">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="rl-psi"><strong>PSI</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rl-psi" name="rL-PSI">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rl-temp"><strong>Temp</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rl-temp" name="rL-TEMP">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rl-toe"><strong>Toe</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rl-toe" name="rL-TOE">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rl-camber"><strong>Camber</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rl-camber" name="rL-camber">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bottom-right">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="rr-psi"><strong>PSI</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rr-psi" name="rr-PSI">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rr-temp"><strong>Temp</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rr-temp" name="rr-TEMP">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rr-toe"><strong>Toe</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rr-toe" name="rr-TOE">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rr-camber"><strong>Camber</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="rr-camber" name="rr-camber">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right-pane">
+                <div class="top-engine">
+
+                </div>
+                <div class="right-suspen">
+                    <table>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                Front
+                            </td>
+                            <td>
+                                Rear
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="height-front height-rear"><strong>Height</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="height-front" name="height-front">
+                            </td>
+                            <td>
+                                <input type="text" id="height-rear" name="height-rear">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="comp-front comp-rear"><strong>Compression</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="comp-front" name="comp-front">
+                            </td>
+                            <td>
+                                <input type="text" id="comp-rear" name="comp-rear">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="bottom-pane">
+
+            </div>
+        </div>
+</body>
+
+</html>
